@@ -10,7 +10,6 @@ export const requestPermissionAndGetToken = async () => {
   }
 
   const permission = await Notification.requestPermission();
-
   if (permission !== "granted") {
     alert("Permission denied");
     return;
@@ -18,9 +17,8 @@ export const requestPermissionAndGetToken = async () => {
 
   try {
     const token = await getToken(messaging, {
-      vapidKey: "BIcsXg4XApnKJPiP1yqgbkpFLpEbZK0dQ6LSQBfHkw0RWqy7GRmpiHCPlArSvFiLgGyU8ygLouTbe88YcHxYLHU",
+      vapidKey: "BMdEwSVHvBjvD48aHPIhaMmyCVmRS766nEfoQ1xdHa8RjEJ73EJD6ZU9aeAeVRLh4pviexzv_AdmqbL6k6h6gjg",
     });
-
     console.log("FCM Token:", token);
     return token;
   } catch (err) {
