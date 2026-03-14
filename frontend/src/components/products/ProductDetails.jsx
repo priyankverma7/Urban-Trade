@@ -2,7 +2,6 @@ import React, { useEffect, useState,Suspense, lazy } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import {  FaTimes, FaUserCircle } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 import { useSelector,useDispatch } from "react-redux";
 import { renderStars,  getRatingText } from "../../utils/renderStars";
 const Header = lazy(() => import("../navbar/Header"));
@@ -20,14 +19,12 @@ const ProductDetails = () => {
   const [popupImage, setPopupImage] = useState(null);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(false);
-  const navigate = useNavigate();
+  
   const dispatch = useDispatch();
 
  
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
-  const redirectAfterLogin = useSelector(
-    (state) => state.auth.redirectAfterLogin
-  );
+ 
   
   useEffect(() => {
     axios
@@ -73,7 +70,7 @@ const ProductDetails = () => {
 
           
           <div className="flex justify-center w-full">
-            <div className="flex items-center w-full max-w-[500px]">
+            <div className="flex items-center w-full max-w-125">
               <img
                 src={currentImage}
                 alt={item.title}
@@ -110,7 +107,7 @@ const ProductDetails = () => {
 
         {/* RIGHT SECTION */}
 
-        <div  className="w-full lg:w-1/3 px-4 lg:px-0 mr-48  overflow-y-scroll  ">
+        <div  className="w-full lg:w-1/3 px-4 lg:px-0 mr-48    ">
         <div className=" ">
 
           <h1 className="text-2xl font-bold mb-4">{item.title}</h1>
@@ -131,7 +128,7 @@ const ProductDetails = () => {
           </div>
           <div className="flex mt-2 justify-start mr-20 gap-4 ">
            <div 
-           className=" flex items-center justify-center h-8 w-24 mt-2 text-white rounded-sm cursor-pointer bg-blue-600 "
+           className=" flex items-center justify-center h-8 w-24 mt-2 text-white rounded-sm cursor-pointer bg-blue-600 hover:bg-blue-700"
            onClick={handleBuyNow}
            >
            Buy now
@@ -236,7 +233,7 @@ const ProductDetails = () => {
             <small className="text-gray-500">{review.reviewerEmail}</small>
           </div>
 
-          <div className="flex flex-col col-start-1 col-end-3  ml-[50px]">
+          <div className="flex flex-col col-start-1 col-end-3  ml-12.5">
 
             <div className="flex items-center ml-0.5">
               <div className="flex">{renderStars(review.rating)}</div>
@@ -261,7 +258,7 @@ const ProductDetails = () => {
 </div>
 
       {popupImage && (
-        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-[9999]">
+        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-9999">
 
           <button
             onClick={() => setPopupImage(null)}

@@ -11,6 +11,7 @@ import ProtectedRoute from "./utils/ProtectedRoute";
 
 import { useNotification } from "./hooks/useNotifications";
 import { requestPermissionAndGetToken } from "./firebase/messaging";
+import Profile from "./components/navbar/Profile";
 
 
 const App = () => {
@@ -25,18 +26,12 @@ const App = () => {
   
   return (
     <BrowserRouter>
-    
-  
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        
         <Route path="/:categoryId" element={<CategoryPage />} />
         <Route path="/product/:id" element={<ProductDetails />} />
-
-      
-        
-
+         <Route path="/profile" element={<Profile />} />
         <Route
           path="/purchase/:id"
           element={

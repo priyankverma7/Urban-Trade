@@ -14,7 +14,7 @@ const Dashboard = () => {
   const getVisibleCount = () => {
     const width = window.innerWidth;
     if (width >= 1440) return 6;
-    if (width >= 1024) return 4;
+    if (width >= 1024) return 6;
     if (width >= 768) return 3;
     if (width >= 425) return 2;
     return 1;
@@ -64,7 +64,7 @@ const Dashboard = () => {
                 grid-cols-1 
                 sm:grid-cols-2 
                 md:grid-cols-3 
-                lg:grid-cols-4 
+                lg:grid-cols-6 
                 xl:grid-cols-6 
                 gap-4
               ">

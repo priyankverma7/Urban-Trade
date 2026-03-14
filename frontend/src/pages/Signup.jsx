@@ -156,7 +156,7 @@ const SignUp = ({openLogin}) => {
 
             <button
               type="submit"
-              className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+              className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition cursor-pointer"
             >
               SIGN UP
             </button>

@@ -59,7 +59,7 @@ const Header = () => {
           {!isLoggedIn && (
             <button
               onClick={() => setShowLoginModal(true)}
-              className="px-4 py-2 h-9 bg-blue-600 text-white rounded-sm hover:bg-blue-700 cursor-pointer "
+              className="px-4 py-1 bg-blue-600 text-white rounded-sm hover:bg-blue-700 cursor-pointer "
             >
               Sign In
             </button>
