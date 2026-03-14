@@ -34,6 +34,7 @@ export const fetchCategories = createAsyncThunk(
 
       return finalList;
     } catch (err) {
+      console.error(err)
       return rejectWithValue("Failed to fetch categories.");
     }
   }

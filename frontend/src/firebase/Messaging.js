@@ -17,7 +17,7 @@ export const requestPermissionAndGetToken = async () => {
 
   try {
     const token = await getToken(messaging, {
-      vapidKey: "BMdEwSVHvBjvD48aHPIhaMmyCVmRS766nEfoQ1xdHa8RjEJ73EJD6ZU9aeAeVRLh4pviexzv_AdmqbL6k6h6gjg",
+      vapidKey:"" ,
     });
     console.log("FCM Token:", token);
     return token;
