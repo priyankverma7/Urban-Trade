@@ -8,7 +8,7 @@ const Header = lazy(() => import("../navbar/Header"));
 import { setRedirectAfterLogin } from "../../Redux/authSlice";
 import Modal from "../modal/Modal";
 import Login from "../../pages/Login";
-import SignUp from "../../pages/SignUp";
+import SignUp from "../../pages/Signup";
 
 
 const ProductDetails = () => {
