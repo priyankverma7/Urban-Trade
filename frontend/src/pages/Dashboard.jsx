@@ -103,7 +103,7 @@ const Dashboard = () => {
       </main>
 
       <footer className="bg-blue-600 text-white text-center py-4 mt-auto">
-        © 2025 UrbanTrade
+        © 2026 UrbanTrade
       </footer>
     </div>
   );
