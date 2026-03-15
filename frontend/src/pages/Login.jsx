@@ -70,9 +70,9 @@ const Login = ({ openSignup, onClose }) => {
                    bg-white px-1 
                    peer-placeholder-shown:top-3
                     peer-placeholder-shown:text-sm
-                    peer-[&:not(:placeholder-shown)]:-top-2
-                  peer-[&:not(:placeholder-shown)]:text-xs
-                 peer-[&:not(:placeholder-shown)]:text-blue-500
+                    peer-not-placeholder-shown:-top-2
+                  peer-not-placeholder-shown:text-xs
+                 peer-not-placeholder-shown:text-blue-500
                     ">
                 Email
               </label>
@@ -104,9 +104,9 @@ const Login = ({ openSignup, onClose }) => {
                 peer-focus:text-blue-500 bg-white px-1
                  peer-placeholder-shown:top-3 
                  peer-placeholder-shown:text-sm
-                  peer-[&:not(:placeholder-shown)]:-top-2
-                  peer-[&:not(:placeholder-shown)]:text-xs
-                 peer-[&:not(:placeholder-shown)]:text-blue-500
+                  peer-not-placeholder-shown:-top-2
+                  peer-not-placeholder-shown:text-xs
+                 peer-not-placeholder-shown:text-blue-500
                  ">
                 Password
               </label>

@@ -41,9 +41,9 @@ const SignUp = ({openLogin}) => {
               <label className="absolute left-3 top-3 text-gray-500 text-sm transition-all
                 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 bg-white px-1
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm
-                peer-[&:not(:placeholder-shown)]:-top-2
-                peer-[&:not(:placeholder-shown)]:text-xs
-                peer-[&:not(:placeholder-shown)]:text-blue-500">
+                peer-not-placeholder-shown:-top-2
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:text-blue-500">
                 First Name
               </label>
               <ErrorMessage name="firstName" component="p" className="text-red-500 text-xs mt-1" />
@@ -59,9 +59,9 @@ const SignUp = ({openLogin}) => {
               <label className="absolute left-3 top-3 text-gray-500 text-sm transition-all
                 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 bg-white px-1
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm
-                peer-[&:not(:placeholder-shown)]:-top-2
-                peer-[&:not(:placeholder-shown)]:text-xs
-                peer-[&:not(:placeholder-shown)]:text-blue-500">
+                peer-not-placeholder-shown:-top-2
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:text-blue-500">
                 Last Name
               </label>
               <ErrorMessage name="lastName" component="p" className="text-red-500 text-xs mt-1" />
@@ -78,9 +78,9 @@ const SignUp = ({openLogin}) => {
               <label className="absolute left-3 top-3 text-gray-500 text-sm transition-all
                 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 bg-white px-1
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm
-                peer-[&:not(:placeholder-shown)]:-top-2
-                peer-[&:not(:placeholder-shown)]:text-xs
-                peer-[&:not(:placeholder-shown)]:text-blue-500">
+                peer-not-placeholder-shown:-top-2
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:text-blue-500">
                 Email
               </label>
               <ErrorMessage name="email" component="p" className="text-red-500 text-xs mt-1" />
@@ -96,9 +96,9 @@ const SignUp = ({openLogin}) => {
               <label className="absolute left-3 top-3 text-gray-500 text-sm transition-all
                 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 bg-white px-1
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm
-                peer-[&:not(:placeholder-shown)]:-top-2
-                peer-[&:not(:placeholder-shown)]:text-xs
-                peer-[&:not(:placeholder-shown)]:text-blue-500">
+                peer-not-placeholder-shown:-top-2
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:text-blue-500">
                 Mobile Number
               </label>
               <ErrorMessage name="number" component="p" className="text-red-500 text-xs mt-1" />
@@ -121,9 +121,9 @@ const SignUp = ({openLogin}) => {
               <label className="absolute left-3 top-3 text-gray-500 text-sm transition-all
                 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 bg-white px-1
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm
-                peer-[&:not(:placeholder-shown)]:-top-2
-                peer-[&:not(:placeholder-shown)]:text-xs
-                peer-[&:not(:placeholder-shown)]:text-blue-500">
+                peer-not-placeholder-shown:-top-2
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:text-blue-500">
                 Password
               </label>
               <ErrorMessage name="password" component="p" className="text-red-500 text-xs mt-1" />
@@ -146,9 +146,9 @@ const SignUp = ({openLogin}) => {
               <label className="absolute left-3 top-3 text-gray-500 text-sm transition-all
                 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 bg-white px-1
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm
-                peer-[&:not(:placeholder-shown)]:-top-2
-                peer-[&:not(:placeholder-shown)]:text-xs
-                peer-[&:not(:placeholder-shown)]:text-blue-500">
+                peer-not-placeholder-shown:-top-2
+                peer-not-placeholder-shown:text-xs
+                peer-not-placeholder-shown:text-blue-500">
                 Confirm Password
               </label>
               <ErrorMessage name="confirmPassword" component="p" className="text-red-500 text-xs mt-1" />

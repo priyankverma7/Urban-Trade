@@ -135,7 +135,7 @@ const statusStyles = {
              {recentOrders.map((order) => (
         <div key={order.id} className="flex items-center gap-3 py-3">
           {/* Icon */}
-          <div className="w-11 h-11 rounded-xl bg-stone-50 flex items-center justify-center text-2xl flex-shrink-0">
+          <div className="w-11 h-11 rounded-xl bg-stone-50 flex items-center justify-center text-2xl shrink-0">
             {order.emoji}
           </div>
 
